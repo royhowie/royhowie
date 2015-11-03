@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>royhowie</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+            font-weight: 300;
+        }
+        html,
+        body {
+            background-color: #fcfcfa;
+            color: #333;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        div#main {
+            background-color: #fcfcfa;
+            border-radius: 2px;
+            border: solid #4682b4 1px;
+            left: 0;
+            margin: auto;
+            opacity: 0.95;
+            padding: 0 15px;
+            position: absolute;
+            right: 0;
+            top: 60px;
+            width: 600px;
+            z-index: 10;
+        }
+        h1, p {
+            padding: 0;
+            /*margin: 10px 0;*/
+        }
+        canvas {
+            margin: -5px 0 0 -5px;
+            position: absolute;
+        }
+        a {
+            color: #4682b4;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #7BE;
+            color: green;
+        }
+        div.footer {
+            display: block;
+            position: fixed;
+            bottom: 0;
+            opacity: 0.95;
+            padding: 0 10px;
+            background-color: #fcfcfa;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>royhowie dot com</h1>
+        <p>
+            I'm on
+            <a href="http://stackoverflow.com/users/2476755/royhowie">stackoverflow</a>
+            &amp;
+            <a href="https://github.com/royhowie">github</a>!
+        </p>
+        <p>
+            <small>
+                The background is a random, perfectly acyclical maze generated through recursive backtracking.
+                Read the <a href="maze2.js">script</a>.
+            </small>
+        </p>
+        <p>
+            <small>
+                coming soon: resume, blog, my projects, &amp; hire me
+                <!-- <a>resume</a>,
+                <a>blog</a>,
+                <a>my projects</a>,
+                <a>hire me</a> -->
+            </small>
+    </div>
+    <script src="maze2.js"></script>
+</body>
+</html>

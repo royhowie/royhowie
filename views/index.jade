@@ -1,0 +1,23 @@
+extends ./template.jade
+
+block title
+    title royhowie dot com
+
+block head
+    link(rel='stylesheet' href='/style/index.css')
+    script(src='/script/maze.js')
+
+block content
+    div#main
+        h1 royhowie dot com
+        p I'm on #[a(href='/stackoverflow') stackoverflow] &amp; #[a(href='/github') github]!
+        p
+            small The background is a random, perfectly acyclical maze generated through recursive backtracking.
+            small  Read the #[a(href='/script/maze.js') script].
+        p
+            small.
+                Read my #[a(href='/resume') resume]. Want to hire me?
+                Email me at
+                #[a(href='mailto:roydhowie@gmail.com') roydhowie@gmail.com].
+        p
+            small coming soon: blog &amp; my projects
