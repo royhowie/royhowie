@@ -1,0 +1,28 @@
+extends ./template.jade
+
+block title
+    title dhall menu
+
+block head
+    link(rel="stylesheet" href="/style/basic.css")
+    link(rel="stylesheet" href="/style/menu.css")
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+block content
+    div#main
+        h1.text-center Mahoney Pearson dhall grub
+        each day, index in menus
+            div.day-wrapper
+                p.date= moment().add(index, 'days').format('ddd MMM D')
+                div.lunch
+                    each station in [ 'CHEFSCHOICE', 'EATLEARNLIVE' ]
+                        - if (day.lunch && day.lunch[station])
+                            div.station
+                                each item, index in day.lunch[station]
+                                    span.menu-item= item.item
+                div.dinner
+                    each station in [ 'CHEFSCHOICE', 'EATLEARNLIVE' ]
+                        - if (day.dinner && day.dinner[station])
+                            div.station
+                                each item, index in day.dinner[station]
+                                    span.menu-item= item.item

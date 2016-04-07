@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-weight: 300;
+}
+
+html, body {
+    background-color: #fcfcfa;
+    color: #333;
+    height: 100%;
+    margin: 0;
+    padding: 20px 0;
+    width: 100%;
+}
+
+div#main {
+    background-color: #fcfcfa;
+    border-radius: 2px;
+    border: solid #4682b4 2px;
+    left: 0;
+    margin: auto;
+    opacity: 0.95;
+    padding: 0 15px 0px 15px;
+    right: 0;
+    width: 750px;
+}
+
+h1, p {
+    padding: 0;
+}
+
+div.day-wrapper {
+    display: block;
+    position: relative;
+    min-height: 120px;
+}
+
+p.date {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+    position: absolute;
+    display: inline-block;
+    left: -58px;
+    top: 46px;
+    font-size: 1.2em;
+    width: 120px;
+}
+
+div.lunch,
+div.dinner {
+    border-radius: 2px;
+    border: solid 2px #4682b4;
+    margin: 10px 0 10px 20px;
+    overflow: hidden;
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+div.lunch { min-height: 54px }
+div.dinner { min-height: 65px }
+
+div.lunch::before,
+div.dinner::before {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+    background-color: #4682b4;
+    border-radius: 2px;
+    border: solid 2px #4682b4;
+    color: white;
+    display: inline-block;
+    left: -44px;
+    padding: 0 2px;
+    position: absolute;
+    width: 100px;
+}
+
+div.lunch::before {
+    content: 'lunch';
+    top: 39px;
+}
+div.dinner::before {
+    content: 'dinner';
+    top: 40px;
+}
+
+div.lunch div.station span:not(:last-child)::after,
+div.dinner div.station span:not(:last-child)::after {
+    content: ', ';
+    color: #4682b4;
+}

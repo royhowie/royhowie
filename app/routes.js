@@ -12,7 +12,13 @@ export default (app) => {
     app.get('/resume', r.general.resume)
 
     /*  ----------------------------
-                  ERROR PAGES
+                 MENU LOADER
+        ----------------------------  */
+
+    app.get('/menu', r.menu.getMenu)
+
+    /*  ----------------------------
+                 ERROR PAGES
         ----------------------------  */
 
     app.use(r.errors.get404)
