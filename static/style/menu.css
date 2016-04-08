@@ -76,19 +76,19 @@ div.dinner::before {
     border: solid 2px #4682b4;
     color: white;
     display: inline-block;
-    left: -44px;
+    left: -94px;
     padding: 0 2px;
     position: absolute;
-    width: 100px;
+    width: 200px;
 }
 
 div.lunch::before {
     content: 'lunch';
-    top: 39px;
+    top: 89px;
 }
 div.dinner::before {
     content: 'dinner';
-    top: 40px;
+    top: 90px;
 }
 
 div.lunch div.station span:not(:last-child)::after,
