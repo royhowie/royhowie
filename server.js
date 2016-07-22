@@ -22,7 +22,7 @@ app.use(session({
     resave: true
 }))
 
-;['/img', '/script', '/style'].forEach((dir) => {
+;['/img', '/script', '/style', '/public'].forEach((dir) => {
     app.use(dir, express.static(`${ __dirname }/static${ dir }`))
 })
 
