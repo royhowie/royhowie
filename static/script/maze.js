@@ -109,6 +109,7 @@ function fill () {
 }
 
 function getRandom (arr) {
+    // console.log(arr)
     var pos = (arr.length * Math.random()) | 0;
     return arr[pos];
 }
@@ -160,10 +161,9 @@ function step (location) {
                 case 4: place = [row + 1, col]; break;
             }
         } else if (!next && (row || col) && stack.length) {
-            place = stack.pop();
-            while (!empty(place)) {
+            do {
                 place = stack.pop();
-            }
+            } while (!empty(place));
         }
 
         if (place) {
