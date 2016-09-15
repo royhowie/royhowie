@@ -32,6 +32,7 @@ block content
             li #[a(href=footeFellow) Foote Fellow]
             li Dean's List (4 of 4)
             li attending on merit scholarship
+            //- li (4.000 in computer science, 3.945 in math)
         ul.inline.tabbed
             li Abstract Algebra
             li Real + Complex Analysis
@@ -41,28 +42,35 @@ block content
             li Operating Systems
             li Computer Architecture
             li Data Structures & Algorithms
+            
+        ul.inline.tabbed
+            li Fall 2016: Topology
+            li Machine Learning
+            li Computer Graphics
 
-        .strike #[h2 Experience]
-        h3 Everglades Holiday Park
-            span.time May 2015 to present
-            span.link
-                a(href='//www.evergladesholidaypark.com') evergladesholidaypark.com
-        p.small.tabbed.
-            Developed a ticketing terminal and admin interface for the park as
-            an alternative to the SaaS in use. Will serve 100k+ online purchases
-            and save $50k+ each year.
-
+        .strike #[h2 Work & Projects]
         h3 Gables Tutoring
-            span.time May 2014 to present
+            span.time May 2014 to June 2016
             span.link #[a(href='//gablestutoring.com') gablestutoring.com]
         p.small.tabbed.
-            Platform serving 1k+ users. Online course registration.
-            Interactive & innovative tutoring session scheduler. Automated
-            payment plans & online billing. Full admin interface. Push
-            notifications to tutors re client scheduling changes.
-        p.small.tabbed.
+            Built on node.js, the platform serves 1k+ users. Online course
+            registration and an interactive, real-time tutoring session scheduler
+            developed with express.js and Jade. Automated payment plans & online
+            billing via a cron and the PayPal API. Push notifications to tutors
+            re client scheduling changes via iCalendar.
+        //- p.small.tabbed.
             "Significantly reduced if not eliminated time spent
             bookkeeping." —— owner
+            
+        h3 CSC421 Operating Systems
+            span.time Spring 2016
+            span "A" grade
+            span.link
+                a(href='//github.com/royhowie/os') #[i.fa.fa-fw.fa-github]royhowie/os
+        p.small.tabbed.
+            Wrote an operating system in BCPL, a predecessor of C. Implemented a
+            fully recursive block-tree file system, low-level interrupts, and
+            process timesharing using virtual memory.
             
         h3 Geomancer Digitization
             span.time Nov 2014 to Nov 2015
@@ -78,24 +86,26 @@ block content
             span.time Aug 2014 to Nov 2014
             span.link #[a(href='//plebvote.com') plebvote.com]
         p.small.tabbed.
-            Designed, developed, and marketed a live voting platform to local
-            high schools.
-            
-        h3 Youth Sailing Coach
-            span.time 2010 to 2014, summer
-        p.small.tabbed.
-            Taught kids to sail. Headed the Little Salts learn-to-sail program in 2014.
+            Live voting platform marketed to local high schools.
+            Node.js, websockets, d3.js.
 
-        .strike #[h2 Programming]
+        - var freelance = 'http://royhowie.com/current'
+        - var freelanceShort = 'royhowie.com/current'
+        h3 Freelance Software Development
+            span.link #[a(href=freelance)= freelanceShort]
+        p.small.tabbed.
+            Projects vary in intensity and requirements. Current project: a web
+            campaign to fundraise for an art installation in the Virgin Islands.
+
+        .strike #[h2 Skills]
         ul.details
+            li JavaScript
             li C
             li Unix
             li git
-            li bash
-            li vim
-            li MEAN
-            li es7
-            li babel
+            li node.js
             li meteor
-            li swift
+            li React
+            li Java
+            li vim
             li BCPL
