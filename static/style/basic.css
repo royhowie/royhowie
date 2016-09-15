@@ -42,6 +42,12 @@ ul.inline li {
     display: inline-block;
     font-size: 0.8em;
 }
+@media print {
+    ul.inline li {
+        display: inline;
+    }
+}
+
 ul.inline li:not(:last-child):after {
     content: ',';
     padding: 0 5px 0 0;
