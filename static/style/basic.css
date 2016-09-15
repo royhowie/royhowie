@@ -11,6 +11,16 @@ html, body {
     padding: 10px 5px;
 }
 
+@media print {
+    html, body {
+        background-color: none;
+    }
+
+    ul.inline li {
+        display: inline;
+    }
+}
+
 h1, h2, h3, h4, h5, h6, p { margin: 10px 0 0 0; }
 p { padding: 2px 0; }
 
@@ -41,11 +51,6 @@ ul.inline {
 ul.inline li {
     display: inline-block;
     font-size: 0.8em;
-}
-@media print {
-    ul.inline li {
-        display: inline;
-    }
 }
 
 ul.inline li:not(:last-child):after {
