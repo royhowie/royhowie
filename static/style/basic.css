@@ -5,17 +5,12 @@
 }
 
 html, body {
-    background-color: #fcfcfa;
     color: #333;
     margin: 0;
     padding: 10px 5px;
 }
 
 @media print {
-    html, body {
-        background-color: none;
-    }
-
     ul.inline li {
         display: inline;
     }
