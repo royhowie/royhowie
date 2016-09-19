@@ -10,6 +10,7 @@ export default (app) => {
     app.get('/stackoverflow', r.general.stackoverflow)
     app.get('/github', r.general.github)
     app.get('/resume', r.general.resume)
+    app.get('/current', r.general.current)
 
     /*  ----------------------------
                  MENU LOADER

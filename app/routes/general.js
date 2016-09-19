@@ -1,8 +1,13 @@
 export default {
+    current,
     github,
     index,
     resume,
     stackoverflow,
+}
+
+function current (req, res) {
+    res.redirect('/public/coal-woman/coalwoman.html')
 }
 
 function github (req, res) {
